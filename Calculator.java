@@ -14,25 +14,29 @@ public class Calculator{
 
         double answer = 0.0;
 
-        switch(opporation){
-            case "addition":
-                answer = num1 + num2;
-                System.out.println(answer);
-                break;
-            case "subtraction":
-                answer = num1 - num2;
-                System.out.println(answer);
-                break;
-            case "multiplication":
-                answer = num1 * num2;
-                System.out.println(answer);
-                break;
-            case "division":
-                answer = num1 / num2;
-                System.out.println(answer);
-                break;
-            default:
-                System.out.println("Error: Not a valid opporation!");
+        if((num2 == 0) && opporation.equals("division")){
+            System.out.println("Error: Divide by Zero");
+        }else{
+            switch(opporation){
+                case "addition":
+                    answer = num1 + num2;
+                    System.out.println(answer);
+                    break;
+                case "subtraction":
+                    answer = num1 - num2;
+                    System.out.println(answer);
+                    break;
+                case "multiplication":
+                    answer = num1 * num2;
+                    System.out.println(answer);
+                    break;
+                case "division":
+                    answer = num1 / num2;
+                    System.out.println(answer);
+                    break;
+                default:
+                    System.out.println("Error: Not a valid opporation!");
+            }
         }
 
         sc.close();
