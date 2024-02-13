@@ -5,14 +5,14 @@ public class Calculator{
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter 2 Whole Numbers: ");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        double num1 = sc.nextDouble();
+        double num2 = sc.nextDouble();
         sc.nextLine();
 
         System.out.println("Which opporation would you like to perform? (addition, subtraction, multiplication, division)");
         String opporation = sc.nextLine();
 
-        int answer = 0;
+        double answer = 0.0;
 
         switch(opporation){
             case "addition":
