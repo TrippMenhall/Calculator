@@ -9,7 +9,7 @@ public class Calculator{
         int num2 = sc.nextInt();
         sc.nextLine();
 
-        System.out.println("Which opporation would you like to perform? (addition or subtraction)");
+        System.out.println("Which opporation would you like to perform? (addition, subtraction, multiplication, division)");
         String opporation = sc.nextLine();
 
         int answer = 0;
@@ -21,6 +21,14 @@ public class Calculator{
                 break;
             case "subtraction":
                 answer = num1 - num2;
+                System.out.println(answer);
+                break;
+            case "multiplication":
+                answer = num1 * num2;
+                System.out.println(answer);
+                break;
+            case "division":
+                answer = num1 / num2;
                 System.out.println(answer);
                 break;
             default:
